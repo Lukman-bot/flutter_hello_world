@@ -20,7 +20,7 @@ class SocialLogin extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 15),
+        const SizedBox(height: 25),
         Container(
           width: MediaQuery.of(context).size.width * 0.8,
           child: Row(
@@ -31,14 +31,14 @@ class SocialLogin extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 55,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    // color: Colors.white,
                     borderRadius: BorderRadius.circular(6),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
-                        blurRadius: 10,
-                      ),
-                    ],
+                    // boxShadow: [
+                    //   BoxShadow(
+                    //     color: Colors.black.withOpacity(0.1),
+                    //     blurRadius: 10,
+                    //   ),
+                    // ],
                   ),
                   child: SvgPicture.asset(
                     'assets/images/google.svg', 
@@ -54,14 +54,14 @@ class SocialLogin extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 55,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    // color: Colors.white,
                     borderRadius: BorderRadius.circular(6),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
-                        blurRadius: 10,
-                      ),
-                    ],
+                    // boxShadow: [
+                    //   BoxShadow(
+                    //     color: Colors.black.withOpacity(0.1),
+                    //     blurRadius: 10,
+                    //   ),
+                    // ],
                   ),
                   child: SvgPicture.asset(
                     'assets/images/facebook.svg', 
@@ -77,14 +77,14 @@ class SocialLogin extends StatelessWidget {
                   alignment: Alignment.center,
                   height: 55,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    // color: Colors.white,
                     borderRadius: BorderRadius.circular(6),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.1),
-                        blurRadius: 10,
-                      ),
-                    ],
+                    // boxShadow: [
+                    //   BoxShadow(
+                    //     color: Colors.black.withOpacity(0.1),
+                    //     blurRadius: 10,
+                    //   ),
+                    // ],
                   ),
                   child: SvgPicture.asset(
                     'assets/images/twitter.svg', 

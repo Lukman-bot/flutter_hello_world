@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_hello_world/utils/global.colors.dart';
-import 'package:flutter_hello_world/utils/widgets/button.global.dart';
-import 'package:flutter_hello_world/utils/widgets/social.login.dart';
-import 'package:flutter_hello_world/utils/widgets/text.form.global.dart';
-import 'package:flutter_hello_world/view/register.view.dart';
 
-class LoginView extends StatelessWidget {
-  LoginView({Key? key}) : super(key: key);
+import '../utils/global.colors.dart';
+import '../utils/widgets/button.global.dart';
+import '../utils/widgets/social.login.dart';
+import '../utils/widgets/text.form.global.dart';
+
+class RegisterView extends StatelessWidget {
+  RegisterView({Key? key}) : super(key: key);
+  
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
+  final TextEditingController confirmpasswordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +37,7 @@ class LoginView extends StatelessWidget {
                 ),
                 const SizedBox(height: 50),
                 Text(
-                  'Login to your account',
+                  'Create Your Account',
                   style: TextStyle(
                     color: GlobalColors.textColor,
                     fontSize: 16,
@@ -63,43 +65,22 @@ class LoginView extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 35),
+                
+                // Password Input
+                TextFormGlobal(
+                  controller: confirmpasswordController, 
+                  text: 'Confirm Password', 
+                  textInputType: TextInputType.text, 
+                  obscure: true
+                ),
+
+                const SizedBox(height: 35),
                 const ButtonGlobal(),
                 const SizedBox(height: 75),
                 const SocialLogin(),
               ],
             ),
           ),
-        ),
-      ),
-      bottomNavigationBar: Container(
-        height: 50,
-        color: Colors.white,
-        alignment: Alignment.center,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              'Don\'t have an account?',
-            ),
-            InkWell(
-              child: ElevatedButton(
-                onPressed: () { 
-                  Navigator.push(
-                    context, 
-                    MaterialPageRoute(
-                      builder: (context) => RegisterView()
-                    ),
-                  );
-                },
-                child: Text(
-                  ' Sign Up',
-                  style: TextStyle(
-                    color: GlobalColors.mainColor,
-                  ),
-                ),
-              ),
-            ),
-          ],
         ),
       ),
     );

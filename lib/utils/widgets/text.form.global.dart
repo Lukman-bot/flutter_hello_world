@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
 class TextFormGlobal extends StatelessWidget {
-  const TextFormGlobal({Key? key, required this.controller, required this.text, required this.textInputType, required this.obscure}) : super(key: key);
+  const TextFormGlobal(
+      {Key? key,
+      required this.controller,
+      required this.text,
+      required this.textInputType,
+      required this.obscure})
+      : super(key: key);
   final TextEditingController controller;
   final String text;
   final TextInputType textInputType;
