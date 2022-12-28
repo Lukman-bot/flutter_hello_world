@@ -75,7 +75,9 @@ class RegisterView extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 35),
-                const ButtonGlobal(),
+                const ButtonGlobal(
+                  text: 'Sign Up',
+                ),
                 const SizedBox(height: 75),
                 const SocialLogin(),
               ],

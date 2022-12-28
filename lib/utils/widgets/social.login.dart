@@ -21,7 +21,7 @@ class SocialLogin extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 25),
-        Container(
+        SizedBox(
           width: MediaQuery.of(context).size.width * 0.8,
           child: Row(
             children: [

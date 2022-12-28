@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hello_world/utils/global.colors.dart';
 
 class ButtonGlobal extends StatelessWidget {
-  const ButtonGlobal({Key? key}) : super(key: key);
-
+  const ButtonGlobal({Key? key, required this.text}) : super(key: key);
+  final String text;
   @override
   Widget build(BuildContext context) {
     return InkWell(
