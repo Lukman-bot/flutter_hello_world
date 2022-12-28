@@ -46,21 +46,20 @@ class LoginView extends StatelessWidget {
 
                 // Email Input
                 TextFormGlobal(
-                  controller: emailController, 
-                  text: 'Email', 
-                  obscure: false, 
+                  controller: emailController,
+                  text: 'Email',
+                  obscure: false,
                   textInputType: TextInputType.emailAddress,
                 ),
 
                 const SizedBox(height: 35),
-                
+
                 // Password Input
                 TextFormGlobal(
-                  controller: passwordController, 
-                  text: 'Password', 
-                  textInputType: TextInputType.text, 
-                  obscure: true
-                ),
+                    controller: passwordController,
+                    text: 'Password',
+                    textInputType: TextInputType.text,
+                    obscure: true),
 
                 const SizedBox(height: 35),
                 const ButtonGlobal(
@@ -84,20 +83,18 @@ class LoginView extends StatelessWidget {
               'Don\'t have an account?',
             ),
             InkWell(
-              child: ElevatedButton(
-                onPressed: () { 
-                  Navigator.push(
-                    context, 
-                    MaterialPageRoute(
-                      builder: (context) => RegisterView()
-                    ),
-                  );
-                },
-                child: Text(
-                  ' Sign Up',
-                  style: TextStyle(
-                    color: GlobalColors.mainColor,
+              onTap: () {
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(
+                    builder: (context) => RegisterView()
                   ),
+                );
+              },
+              child: Text(
+                ' Sign Up',
+                style: TextStyle(
+                  color: GlobalColors.mainColor,
                 ),
               ),
             ),
